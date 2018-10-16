@@ -108,7 +108,7 @@ p {
 .section_subtitle {
 	position: relative;
 	margin-top: 30px;
-	font-family: 'open_sanslight', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #555;
 }
 .uk-margin-large-bottom.section_subtitle {
@@ -181,7 +181,7 @@ p {
 	background-attachment: fixed;
 }
 .rainy_effect .container {
-	background: url('../images/photo_1.jpg') no-repeat 0 0;
+	background: url('https://res.cloudinary.com/dzixj0ktk/image/upload/v1539666857/photo_1_bhbsut.jpg') no-repeat 0 0;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -267,7 +267,8 @@ p {
 	padding: 0 14px;
 	color: #fff;
 	font-size: 12px;
-	font-family: 'robotoregular', sans-serif;
+	font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 	letter-spacing: 0.65px;
 	text-shadow: 1px 1px 20px rgba(0,0,0,0.5);
 	text-transform: uppercase;
@@ -309,10 +310,10 @@ p {
 .container_subtitle {
 	position: relative;
 	color: #fff;
-	font-family: 'robotoregular', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 60px;
 	line-height: 67px;
-    font-weight: 600;
+  font-weight: 600;
 	text-shadow: 1px 1px 30px rgba(0,0,0,0.3);
 }
 .container_description {
@@ -321,7 +322,8 @@ p {
 	margin: 0 auto;
 	font-size: 18px;
 	line-height: 23px;
-    font-family: 'robotolight', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 	color: #fff;
 	text-shadow: 1px 1px 30px rgba(0,0,0,0.3);
 }
@@ -578,12 +580,13 @@ p {
 .price_block_title {
 	margin: 0;
 	color: #fff;
-    font-family: "robotoregular", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 .price_block_cost {
 	margin: 0;
 	padding: 0;
-    font-family: "robotoregular", sans-serif;
+    font-family: "Roboto", sans-serif;
 	font-size: 40px;
     font-weight: 600;
     color: #fff;
@@ -724,13 +727,15 @@ p {
 }
 .statistic_counter {
 	font-size: 85px;
-	font-family: "robotoregular", sans-serif;
+	font-family: "Roboto", sans-serif;
+  font-weight: 400;
     text-shadow: 1px 1px #777;
 }
 .statistic_text {
     margin-top: 5px;
 	font-size: 20px;
-	font-family: "robotolight", sans-serif;
+	font-family: "Roboto", sans-serif;
+  font-weight: 300;
 	text-transform: capitalize;
 	text-shadow: 1px 1px #000;
 }
@@ -787,7 +792,8 @@ p {
 	position: relative;
 	bottom: -5px;
 	font-size: 20px;
-    font-family: "robotolight", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
 	opacity: 0;
 	transition: bottom 0.3s ease-in 0.1s, opacity 0.3s ease-in 0.1s;
 }
@@ -939,7 +945,8 @@ p {
     padding: 20px;
 	margin: 0 40px 40px;
     color: #777;
-	font-family: "robotolight", sans-serif;
+	font-family: "Roboto", sans-serif;
+  font-weight: 300;
     font-size: 16px;
 	background: #fff;
     border: 1px solid #e6e6e6;
@@ -969,7 +976,8 @@ p {
 .reviews_position {
 	color: #94a3a8;
 	font-size: 14px;
-	font-family: "robotolight", sans-serif;
+	font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 .reviews .uk-slidenav-position .uk-slidenav {
 	top: 75%;
@@ -1281,7 +1289,8 @@ p {
 }
 .address_text {
 	font-size: 16px;
-    font-family: 'robotolight', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 /******* Map *******/
