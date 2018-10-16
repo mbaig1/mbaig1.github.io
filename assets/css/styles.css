@@ -1293,13 +1293,6 @@ p {
     font-weight: 300;
 }
 
-/******* Map *******/
-
-.map {
-	height: 600px;
-	border: 0;
-}
-
 /******* Scroll button *******/
 
 .scroll_top {
