@@ -1,0 +1,11 @@
+.background-image-rain {
+  width: 100vw;
+  height: 100vh;
+  background: url('https://res.cloudinary.com/dzixj0ktk/image/upload/v1539709859/photo_1_qwxu9e.jpg') no-repeat 0 0;
+	background-size: cover;
+	background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
