@@ -231,6 +231,7 @@ app.controller('myPageCtrl', function($scope,$http){
 				$scope.image.crossOrigin = 'anonymous';
 				$scope.image.src = 'https://res.cloudinary.com/dzixj0ktk/image/upload/v1539709859/photo_1_qwxu9e.jpg';
 			}
+
 			$scope.run();
 		}
 		if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
@@ -241,7 +242,7 @@ app.controller('myPageCtrl', function($scope,$http){
 
 	}
 
-	$scope.setEffect();
+	// $scope.setEffect();
 
 	/* ------------------------------ */
 	/* FORM SUBMIT HINTS

@@ -3048,6 +3048,19 @@ select.uk-form-width-mini {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, .1)
 }
 
+/* custom icons */
+.uk-icon-money:before {
+    content: "\f3d1";
+}
+
+.uk-icon-fraud:before {
+    content: "\f630";
+}
+
+.uk-icon-rank:before {
+    content: "\f162";
+}
+
 .uk-icon-glass:before {
     content: "\f000"
 }
