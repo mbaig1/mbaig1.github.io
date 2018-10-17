@@ -2,19 +2,33 @@ body, html {
   height: 100%;
 }
 
-.background-image-rain {
+.container {
+  position: relative;
   height: 100%;
-  background: url('https://res.cloudinary.com/dzixj0ktk/image/upload/o_65/v1539797933/photo_1_qwxu9e.jpg') no-repeat 0 0;
-	background-size: cover;
-	background-attachment: fixed;
-  background-position: center;
+  width: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#background-image-rain {
+  position: absolute;
+  height: 100%;
+}
+
+.logo-container {
+  position: absolute;
+  z-index: 100;
+
+  width: 67.5%;
+  padding-bottom: 10%;
+}
+
 .logo {
-  width: 82.5%;
-  padding-bottom: 7.5%;
+  z-index: 100;
+  position: absolute;
+
+  width: 100%;
+  margin: auto;
 }
