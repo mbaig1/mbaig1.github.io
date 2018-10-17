@@ -15,8 +15,6 @@ body, html {
 #background-image-rain {
   position: absolute;
   height: 100%;
-  width: 100%;
-
 }
 
 .logo-container {
@@ -24,6 +22,7 @@ body, html {
   z-index: 100;
 
   width: 67.5%;
+  padding-bottom: 10%;
 }
 
 .logo {

@@ -228,8 +228,6 @@ app.controller('myPageCtrl', function($scope,$http){
 					engine.rain([ [1, 2, 4000] ]);
 					engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
 				};
-				$scope.image.crossOrigin = 'anonymous';
-				$scope.image.src = 'https://res.cloudinary.com/dzixj0ktk/image/upload/v1539709859/photo_1_qwxu9e.jpg';
 			}
 
 			$scope.run();
