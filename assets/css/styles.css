@@ -507,38 +507,6 @@ p {
 	margin: 0 -70px;
 }
 
-/******* Features section *******/
-
-.features {
-	padding: 100px 0 50px;
-	background: url('https://image.ibb.co/e2DX8G/page_4.jpg') no-repeat center center;
-	background-size: cover;
-	background-attachment: fixed;
-	border: 0;
-}
-.features_block {
-	padding: 0 10px;
-}
-.features_logo {
-    width: 90px;
-    height: 90px;
-    line-height: 90px;
-	border-radius: 100%;
-    background: none;
-	font-size: 56px;
-	color: #fff;
-	transition: box-shadow 0.5s, background 0.5s;
-}
-.features_logo:hover {
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-.features_caption {
-	font-size: 24px;
-}
-.uk-text-contrast.features_text {
-	color: #ddd !important;
-}
-
 /******* Price section *******/
 
 .price {
