@@ -4425,7 +4425,8 @@ select.uk-form-width-mini {
 }
 
 .uk-icon-instagram:before {
-    content: "\f16d"
+    content: "\f16d";
+    font-size: 40px;
 }
 
 .uk-icon-flickr:before {
@@ -5395,6 +5396,10 @@ select.uk-form-width-mini {
 
 .uk-icon-map:before {
     content: "\f279"
+}
+
+.uk-icon-map-flag:before {
+    content: "\f3c5";
 }
 
 .uk-icon-map-o:before {
