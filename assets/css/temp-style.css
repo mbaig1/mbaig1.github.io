@@ -1178,6 +1178,18 @@ header p {
   width: 30%;
 }
 
+@media screen and (max-width: 560px) {
+
+  .contact-info-container {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
+}
+
 /* Social Media */
 
 .social-media-container {
@@ -1194,18 +1206,6 @@ header p {
 
 .social_list_item_link {
   background-color: #f7f7f7;
-}
-
-@media screen and (max-width: 560px) {
-
-  .contact-info-container {
-    flex-direction: column;
-  }
-
-  .contact-info {
-    width: 100%;
-  }
-
 }
 
 /* Footer */
