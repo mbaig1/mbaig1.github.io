@@ -10,4 +10,4 @@ function run() {
 
   img.src = "https://res.cloudinary.com/dzixj0ktk/image/upload/o_65/v1539797933/photo_1_qwxu9e.jpg";
 }
-window.onload = setTimeout(run, 1000);
+window.onload = setTimeout(run, 2000);

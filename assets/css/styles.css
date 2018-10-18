@@ -1601,7 +1601,7 @@ p {
 
 /******* Spinner *******/
 
-.spinner {
+#spinner {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -1615,7 +1615,7 @@ p {
 	left: 0;
 	top: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 20%;
 	margin: auto;
 	width: 40px;
 	height: 40px;
