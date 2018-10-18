@@ -1171,6 +1171,7 @@ header p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .contact-info {
@@ -1193,6 +1194,18 @@ header p {
 
 .social_list_item_link {
   background-color: #f7f7f7;
+}
+
+@media screen and (max-width: 560px) {
+
+  .contact-info-container {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
 }
 
 /* Footer */
