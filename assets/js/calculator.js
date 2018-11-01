@@ -76,7 +76,6 @@ methodThree() {
 calculator() {
   setup();
 
-  var postRates = [methodOne(), methodTwo(), methodThree()];
-  var averagePostRate = (postRates[0] + postRates[1] + postRates[2])/3
-  var hourlyRates = [postRates[0] * demographicsData, postRates[1] * demographicsData, postRates[2] * demographicsData]
+  var postRates = [methodOne() * demographicsData, methodTwo() * demographicsData, methodThree() * demographicsData];
+  var averagePostRate = (postRates[0] + postRates[1] + postRates[2])/3;
 }
