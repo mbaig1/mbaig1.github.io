@@ -11,6 +11,7 @@
 	<link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16" />
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Orbitron:400" rel="stylesheet">
 	<link href="assets/css/uikit.css" rel="stylesheet" media="all">
@@ -39,7 +40,103 @@
 	</section>
 
 	<!-- One -->
-	<section id="one" class="wrapper special">
+	<!-- <section id="one" class="form-container">
+		<form>
+	    <div class="row">
+	      <div class="col-25">
+	        <label for="fullname">Name</label>
+	      </div>
+	      <div class="col-75">
+	        <input type="text" id="fullname" name="fullname" placeholder="Your name..">
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-25">
+	        <label for="email">Email Address</label>
+	      </div>
+	      <div class="col-75">
+	        <input type="text" id="email" name="email" placeholder="something@domain.com">
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-25">
+	        <label for="likes">likes</label>
+	        <input type="number" id="likes" name="likes">
+	      </div>
+				<div class="col-25">
+	        <label for="comments">comments</label>
+	        <input type="number" id="comments" name="comments">
+	      </div>
+				<div class="col-25">
+	        <label for="category">Category</label>
+	        <select id="category" name="category">
+	          <option value="Fitness">Fitness</option>
+	          <option value="Food">Food</option>
+	          <option value="Fashion">Fashion</option>
+						<option value="Photography">Photography</option>
+	          <option value="Kid/Family">Kid/Family</option>
+	          <option value="Travel">Travel</option>
+	          <option value="Beauty">Beauty</option>
+	        </select>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <input type="submit" value="Submit">
+	    </div>
+  	</form>
+	</section> -->
+
+	<section class="wrapper special">
+		<form>
+		  <div class="form-row">
+		    <div class="form-group col-md-6">
+		      <label for="fullname">Name</label>
+		      <input type="text" class="form-control" id="fullname" placeholder="Name">
+		    </div>
+				<div class="form-group col-md-6">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="email" placeholder="Email">
+				</div>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputAddress">Address</label>
+		    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+		  </div>
+		  <div class="form-group">
+		    <label for="inputAddress2">Address 2</label>
+		    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+		  </div>
+		  <div class="form-row">
+		    <div class="form-group col-md-6">
+		      <label for="inputCity">City</label>
+		      <input type="text" class="form-control" id="inputCity">
+		    </div>
+		    <div class="form-group col-md-4">
+		      <label for="inputState">State</label>
+		      <select id="inputState" class="form-control">
+		        <option selected>Choose...</option>
+		        <option>...</option>
+		      </select>
+		    </div>
+		    <div class="form-group col-md-2">
+		      <label for="inputZip">Zip</label>
+		      <input type="text" class="form-control" id="inputZip">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="form-check">
+		      <input class="form-check-input" type="checkbox" id="gridCheck">
+		      <label class="form-check-label" for="gridCheck">
+		        Check me out
+		      </label>
+		    </div>
+		  </div>
+		  <button type="submit" class="btn btn-primary">Sign in</button>
+		</form>
+	</section>
+
+	<!-- Two -->
+	<section id="two" class="wrapper special">
 		<div class="inner">
 			<header class="major">
 				<h2>We convert your instagram influence into an hourly and per-post rate backed by data.</h2>
@@ -82,53 +179,6 @@
 				</div>
 			</div>
 		</div>
-	</section>
-
-	<!-- Two -->
-	<section id="two" class="form-container">
-		<form>
-	    <div class="row">
-	      <div class="col-25">
-	        <label for="fullname">Name</label>
-	      </div>
-	      <div class="col-75">
-	        <input type="text" id="fullname" name="fullname" placeholder="Your name..">
-	      </div>
-	    </div>
-	    <div class="row">
-	      <div class="col-25">
-	        <label for="email">Last Name</label>
-	      </div>
-	      <div class="col-75">
-	        <input type="text" id="email" name="email" placeholder="something@domain.com">
-	      </div>
-	    </div>
-	    <div class="row">
-	      <div class="col-25">
-	        <label for="likes">likes</label>
-	        <input type="number" id="likes" name="likes">
-	      </div>
-				<div class="col-25">
-	        <label for="comments">comments</label>
-	        <input type="number" id="comments" name="comments">
-	      </div>
-				<div class="col-25">
-	        <label for="category">Category</label>
-	        <select id="category" name="category">
-	          <option value="Fitness">Fitness</option>
-	          <option value="Food">Food</option>
-	          <option value="Fashion">Fashion</option>
-						<option value="Photography">Photography</option>
-	          <option value="Kid/Family">Kid/Family</option>
-	          <option value="Travel">Travel</option>
-	          <option value="Beauty">Beauty</option>
-	        </select>
-	      </div>
-	    </div>
-	    <div class="row">
-	      <input type="submit" value="Submit">
-	    </div>
-  	</form>
 	</section>
 
 	<!-- Three -->

@@ -282,7 +282,7 @@ p {
 
 /******* Container section *******/
 
-.container {
+/* .container {
 	background: url('https://image.ibb.co/ed9vvw/page_1.jpg') no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -438,7 +438,7 @@ p {
 }
 .container_form .container_description:before {
 	width: 95%;
-}
+} */
 
 /******* Elements section *******/
 
