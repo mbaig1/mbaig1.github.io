@@ -8,6 +8,16 @@
 	<meta name="description" content="">
 	<title>Datafluencer</title>
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131019415-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-131019415-1');
+	</script>
+
 	<link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16" />
 
@@ -32,108 +42,283 @@
   </div>
 
 	<section class="top-container">
-		<img id="background-image-rain" crossorigin="anyonymous" src="https://res.cloudinary.com/dzixj0ktk/image/upload/o_65/v1539797933/photo_1_qwxu9e.jpg">
+		<!-- <img id="background-image-rain" crossorigin="anyonymous" src="https://res.cloudinary.com/dzixj0ktk/image/upload/o_65/v1539797933/photo_1_qwxu9e.jpg"> -->
+
+		<div class="box-container">
+			<div class="box">
+				<div class="wave w-one"></div>
+			</div>
+		</div>
 
 		<div class="logo-container">
 			<img id="logo" src="https://res.cloudinary.com/dzixj0ktk/image/upload/v1540351730/Datafluencer_Logo_colorful_W_Shadows_af5wdn.png" alt="logo">
 		</div>
 	</section>
 
-	<!-- One -->
-	<!-- <section id="one" class="form-container">
-		<form>
-	    <div class="row">
-	      <div class="col-25">
-	        <label for="fullname">Name</label>
-	      </div>
-	      <div class="col-75">
-	        <input type="text" id="fullname" name="fullname" placeholder="Your name..">
-	      </div>
-	    </div>
-	    <div class="row">
-	      <div class="col-25">
-	        <label for="email">Email Address</label>
-	      </div>
-	      <div class="col-75">
-	        <input type="text" id="email" name="email" placeholder="something@domain.com">
-	      </div>
-	    </div>
-	    <div class="row">
-	      <div class="col-25">
-	        <label for="likes">likes</label>
-	        <input type="number" id="likes" name="likes">
-	      </div>
-				<div class="col-25">
-	        <label for="comments">comments</label>
-	        <input type="number" id="comments" name="comments">
-	      </div>
-				<div class="col-25">
-	        <label for="category">Category</label>
-	        <select id="category" name="category">
-	          <option value="Fitness">Fitness</option>
-	          <option value="Food">Food</option>
-	          <option value="Fashion">Fashion</option>
-						<option value="Photography">Photography</option>
-	          <option value="Kid/Family">Kid/Family</option>
-	          <option value="Travel">Travel</option>
-	          <option value="Beauty">Beauty</option>
-	        </select>
-	      </div>
-	    </div>
-	    <div class="row">
-	      <input type="submit" value="Submit">
-	    </div>
-  	</form>
-	</section> -->
+	<div class="first-break">
+		<p class="break-copy">
+			What are your Instagram posts worth? Just input your total likes and comments per post below and we’ll generate a detailed report broken down by industry.
+		</p>
+	</div>
 
-	<section class="wrapper special">
-		<form>
+	<!-- One -->
+	<div class="special">
+		<form class="container top-padding">
 		  <div class="form-row">
-		    <div class="form-group col-md-6">
-		      <label for="fullname">Name</label>
-		      <input type="text" class="form-control" id="fullname" placeholder="Name">
+		    <div class="form-group col-md-4 floating-label-form-group">
+		      <label for="insta-handle">Instagram Handle</label>
+		      <input type="text" class="form-control" id="insta-handle" placeholder="Insta-handle">
 		    </div>
-				<div class="form-group col-md-6">
+				<div class="form-group col-md-6 floating-label-form-group">
 					<label for="email">Email</label>
 					<input type="email" class="form-control" id="email" placeholder="Email">
 				</div>
+				<div class="form-group col-md-2 floating-label-form-group">
+					<label for="city">City</label>
+					<input type="city" class="form-control" id="city" placeholder="City">
+				</div>
 		  </div>
-		  <div class="form-group">
-		    <label for="inputAddress">Address</label>
-		    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-		  </div>
-		  <div class="form-group">
-		    <label for="inputAddress2">Address 2</label>
-		    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-		  </div>
+
+			<br>
+			<br>
+
 		  <div class="form-row">
-		    <div class="form-group col-md-6">
-		      <label for="inputCity">City</label>
-		      <input type="text" class="form-control" id="inputCity">
-		    </div>
-		    <div class="form-group col-md-4">
-		      <label for="inputState">State</label>
-		      <select id="inputState" class="form-control">
-		        <option selected>Choose...</option>
-		        <option>...</option>
+		    <div class="form-group col-md-6 floating-label-form-group">
+		      <label for="industryOne">Industry</label>
+		      <select id="industryOne" class="form-control category">
+		        <option>Industry</option>
+		        <option>Fitness</option>
+		        <option>Food</option>
+		        <option>Fashion</option>
+		        <option>Photography</option>
+		        <option>Kid/Family</option>
+		        <option>Beauty</option>
+		        <option>Travel</option>
 		      </select>
 		    </div>
-		    <div class="form-group col-md-2">
-		      <label for="inputZip">Zip</label>
-		      <input type="text" class="form-control" id="inputZip">
-		    </div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="likesOne"># of Likes</label>
+					<input type="number" class="form-control likes" id="likesOne" placeholder="# of Likes">
+				</div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="commentsOne"># of Comments</label>
+					<input type="number" class="form-control comments" id="commentsOne" placeholder="# of Comments">
+				</div>
 		  </div>
-		  <div class="form-group">
-		    <div class="form-check">
-		      <input class="form-check-input" type="checkbox" id="gridCheck">
-		      <label class="form-check-label" for="gridCheck">
-		        Check me out
-		      </label>
+			<div class="form-row">
+		    <div class="form-group col-md-6 floating-label-form-group">
+		      <label for="industryTwo">Industry</label>
+		      <select id="industryTwo" class="form-control category">
+		        <option>Industry</option>
+		        <option>Fitness</option>
+		        <option>Food</option>
+		        <option>Fashion</option>
+		        <option>Photography</option>
+		        <option>Kid/Family</option>
+		        <option>Beauty</option>
+		        <option>Travel</option>
+		      </select>
 		    </div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="likesTwo"># of Likes</label>
+					<input type="number" class="form-control likes" id="likesTwo" placeholder="# of Likes">
+				</div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="commentsTwo"># of Comments</label>
+					<input type="number" class="form-control comments" id="commentsTwo" placeholder="# of Comments">
+				</div>
 		  </div>
-		  <button type="submit" class="btn btn-primary">Sign in</button>
+			<div class="form-row">
+		    <div class="form-group col-md-6 floating-label-form-group">
+		      <label for="industryThree">Industry</label>
+		      <select id="industryThree" class="form-control category">
+		        <option>Industry</option>
+		        <option>Fitness</option>
+		        <option>Food</option>
+		        <option>Fashion</option>
+		        <option>Photography</option>
+		        <option>Kid/Family</option>
+		        <option>Beauty</option>
+		        <option>Travel</option>
+		      </select>
+		    </div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="likesThree"># of Likes</label>
+					<input type="number" class="form-control likes" id="likesThree" placeholder="# of Likes">
+				</div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="commentsThree"># of Comments</label>
+					<input type="number" class="form-control comments" id="commentsThree" placeholder="# of Comments">
+				</div>
+		  </div>
+			<div class="form-row">
+		    <div class="form-group col-md-6 floating-label-form-group">
+		      <label for="industryFour">Industry</label>
+		      <select id="industryFour" class="form-control category">
+		        <option>Industry</option>
+		        <option>Fitness</option>
+		        <option>Food</option>
+		        <option>Fashion</option>
+		        <option>Photography</option>
+		        <option>Kid/Family</option>
+		        <option>Beauty</option>
+		        <option>Travel</option>
+		      </select>
+		    </div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="likesFour"># of Likes</label>
+					<input type="number" class="form-control likes" id="likesFour" placeholder="# of Likes">
+				</div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="commentsFour"># of Comments</label>
+					<input type="number" class="form-control comments" id="commentsFour" placeholder="# of Comments">
+				</div>
+		  </div>
+			<div class="form-row">
+		    <div class="form-group col-md-6 floating-label-form-group">
+		      <label for="industryFive">Industry</label>
+		      <select id="industryFive" class="form-control category">
+		        <option>Industry</option>
+		        <option>Fitness</option>
+		        <option>Food</option>
+		        <option>Fashion</option>
+		        <option>Photography</option>
+		        <option>Kid/Family</option>
+		        <option>Beauty</option>
+		        <option>Travel</option>
+		      </select>
+		    </div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="likesFive"># of Likes</label>
+					<input type="number" class="form-control likes" id="likesFive" placeholder="# of Likes">
+				</div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="commentsFive"># of Comments</label>
+					<input type="number" class="form-control comments" id="commentsFive" placeholder="# of Comments">
+				</div>
+		  </div>
+			<div class="form-row">
+		    <div class="form-group col-md-6 floating-label-form-group">
+		      <label for="industrySix">Industry</label>
+		      <select id="industrySix" class="form-control category">
+		        <option>Industry</option>
+		        <option>Fitness</option>
+		        <option>Food</option>
+		        <option>Fashion</option>
+		        <option>Photography</option>
+		        <option>Kid/Family</option>
+		        <option>Beauty</option>
+		        <option>Travel</option>
+		      </select>
+		    </div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="likesSix"># of Likes</label>
+					<input type="number" class="form-control likes" id="likesSix" placeholder="# of Likes">
+				</div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="commentsSix"># of Comments</label>
+					<input type="number" class="form-control comments" id="commentsSix" placeholder="# of Comments">
+				</div>
+		  </div>
+			<div class="form-row">
+		    <div class="form-group col-md-6 floating-label-form-group">
+		      <label for="industrySeven">Industry</label>
+		      <select id="industrySeven" class="form-control category">
+		        <option>Industry</option>
+		        <option>Fitness</option>
+		        <option>Food</option>
+		        <option>Fashion</option>
+		        <option>Photography</option>
+		        <option>Kid/Family</option>
+		        <option>Beauty</option>
+		        <option>Travel</option>
+		      </select>
+		    </div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="likesSeven"># of Likes</label>
+					<input type="number" class="form-control likes" id="likesSeven" placeholder="# of Likes">
+				</div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="commentsSeven"># of Comments</label>
+					<input type="number" class="form-control comments" id="commentsSeven" placeholder="# of Comments">
+				</div>
+		  </div>
+			<div class="form-row">
+		    <div class="form-group col-md-6 floating-label-form-group">
+		      <label for="industryEight">Industry</label>
+		      <select id="industryEight" class="form-control category">
+		        <option>Industry</option>
+		        <option>Fitness</option>
+		        <option>Food</option>
+		        <option>Fashion</option>
+		        <option>Photography</option>
+		        <option>Kid/Family</option>
+		        <option>Beauty</option>
+		        <option>Travel</option>
+		      </select>
+		    </div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="likesEight"># of Likes</label>
+					<input type="number" class="form-control likes" id="likesEight" placeholder="# of Likes">
+				</div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="commentsEight"># of Comments</label>
+					<input type="number" class="form-control comments" id="commentsEight" placeholder="# of Comments">
+				</div>
+		  </div>
+			<div class="form-row">
+		    <div class="form-group col-md-6 floating-label-form-group">
+		      <label for="industryNine">Industry</label>
+		      <select id="industryNine" class="form-control category">
+		        <option>Industry</option>
+		        <option>Fitness</option>
+		        <option>Food</option>
+		        <option>Fashion</option>
+		        <option>Photography</option>
+		        <option>Kid/Family</option>
+		        <option>Beauty</option>
+		        <option>Travel</option>
+		      </select>
+		    </div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="likesNine"># of Likes</label>
+					<input type="number" class="form-control likes" id="likesNine" placeholder="# of Likes">
+				</div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="commentsNine"># of Comments</label>
+					<input type="number" class="form-control comments" id="commentsNine" placeholder="# of Comments">
+				</div>
+		  </div>
+			<div class="form-row">
+		    <div class="form-group col-md-6 floating-label-form-group">
+		      <label for="industryTen">Industry</label>
+		      <select id="industryTen" class="form-control category">
+		        <option>Industry</option>
+		        <option>Fitness</option>
+		        <option>Food</option>
+		        <option>Fashion</option>
+		        <option>Photography</option>
+		        <option>Kid/Family</option>
+		        <option>Beauty</option>
+		        <option>Travel</option>
+		      </select>
+		    </div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="likesTen"># of Likes</label>
+					<input type="number" class="form-control likes" id="likesTen" placeholder="# of Likes">
+				</div>
+				<div class="form-group col-md-3 floating-label-form-group">
+					<label for="commentsTen"># of Comments</label>
+					<input type="number" class="form-control comments" id="commentsTen" placeholder="# of Comments">
+				</div>
+		  </div>
+
+			<br>
+			<br>
+
+		  <button id="calculate" type="button" class="btn btn-primary">Calculate</button>
 		</form>
-	</section>
+	</div>
 
 	<!-- Two -->
 	<section id="two" class="wrapper special">
@@ -219,9 +404,10 @@
 		</div>
 	</footer>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="assets/js/rainyday.min.js"></script>
 	<script src="assets/js/rainy-effect.js"></script>
-	<script src="assets/js/mobile-scripts.js"></script>
 	<script src="assets/js/transitions.js"></script>
+	<script src="assets/js/calculator.js"></script>
 </body>
 </html>

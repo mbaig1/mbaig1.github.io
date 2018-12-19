@@ -4,18 +4,20 @@ body, html {
 
 .top-container {
   position: relative;
-  height: 100%;
+  height: 70%;
   width: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border-bottom: rgba(221,221,221,0.7) solid 1px;
+  /* border-bottom: rgba(221,221,221,0.7) solid 1px;
 
   -webkit-box-shadow: 0px 0px 250px 2px rgba(221,221,221,0.7);
   -moz-box-shadow: 0px 0px 250px 2px rgba(221,221,221,0.7);
-  box-shadow: 0px 0px 250px 2px rgba(221,221,221,0.7);
+  box-shadow: 0px 0px 250px 2px rgba(221,221,221,0.7); */
+
+  background-color: #ffffff;
 }
 
 #background-image-rain {
@@ -28,6 +30,8 @@ body, html {
   position: absolute;
   z-index: 100;
 
+  height: 500px;
+
   width: 67.5%;
 }
 
@@ -37,6 +41,165 @@ body, html {
 
   width: 100%;
   margin: auto;
+}
+
+.top-padding {
+  padding-top: 5%;
+}
+
+/* Waves */
+
+.box-container {
+  position: absolute;
+  overflow: hidden;
+
+  /* background: #ffe259;
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+  background: linear-gradient(to right, #ffa751, #ffe259); */
+
+  /* background: #2980B9;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  */
+
+  background: #FDC830;
+  background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+  background: linear-gradient(to right, #F37335, #FDC830);
+
+  opacity: .75;
+
+  top: 0;
+  width: 100%;
+  height: 75%;
+}
+
+.box {
+  z-index: 1;
+
+  width: 100%;
+}
+
+.wave {
+  background-image: url("https://res.cloudinary.com/dzixj0ktk/image/upload/v1545172515/orange_line_j0pj9i.png");
+  background-size: 50% 75px;
+
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: 100%;
+  width: 200%;
+  background-position: 0 bottom;
+  background-repeat: repeat-x;
+  transform-origin: center bottom;
+
+  opacity: 1;
+}
+
+.w-one {
+  animation: waves 7s linear infinite;
+  z-index: 12;
+}
+
+.w-two {
+  animation: waves 11s linear infinite;
+  z-index: 11;
+}
+
+.w-three {
+  animation: waves 16s linear infinite;
+  z-index: 10;
+}
+
+@keyframes waves {
+  0% { transform: translateX(0) translateZ(0) scaleY(1); }
+  0% { transform: translateX(-25%) translateZ(0) scaleY(.5); }
+  0% { transform: translateX(-50%) translateZ(0) scaleY(1); }
+}
+
+/* First break */
+
+.first-break {
+  height: 15%;
+}
+
+/* Form */
+
+.floating-label-form-group {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+    position: relative;
+    padding-bottom: 0.5em;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: none !important;
+    position: relative;
+    z-index: 1;
+    font-size: 1.5em;
+    resize: none;
+}
+
+.floating-label-form-group select,
+.floating-label-form-group input[type=number] {
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    font-size: 1.5em;
+    box-shadow: none;
+    margin-left: -4px;
+    background: transparent;
+}
+
+.floating-label-form-group label {
+    pointer-events: none;
+    display: block;
+    position: relative;
+    top: 2em;
+    opacity: 0;
+    z-index: 0;
+    font-size: 0.85em;
+    line-height: 1.764705882em;
+    vertical-align: baseline;
+    margin: 0;
+    -webkit-transition: top 0.3s ease, opacity 0.3s ease;
+    -moz-transition: top 0.3s ease, opacity 0.3s ease;
+    -ms-transition: top 0.3s ease, opacity 0.3s ease;
+    transition: top 0.3s ease, opacity 0.3s ease;
+}
+
+.floating-label-form-group:not(:first-child) {
+    border-left: 1px solid #ccc;
+    padding-left: 14px;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #428bca;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #ccc;
+}
+
+/* Background colors */
+
+.gradient {
+  background: #DD5E89;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F7BB97, #DD5E89);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F7BB97, #DD5E89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /* Type */
