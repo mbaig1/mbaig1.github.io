@@ -53,14 +53,6 @@ body, html {
   position: absolute;
   overflow: hidden;
 
-  /* background: #ffe259;
-  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
-  background: linear-gradient(to right, #ffa751, #ffe259); */
-
-  /* background: #2980B9;
-  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  */
-
   background: #FDC830;
   background: -webkit-linear-gradient(to right, #F37335, #FDC830);
   background: linear-gradient(to right, #F37335, #FDC830);
@@ -98,16 +90,6 @@ body, html {
 
 .w-one {
   animation: waves 7s linear infinite;
-  z-index: 12;
-}
-
-.w-two {
-  animation: waves 11s linear infinite;
-  z-index: 11;
-}
-
-.w-three {
-  animation: waves 16s linear infinite;
   z-index: 10;
 }
 
