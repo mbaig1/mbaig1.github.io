@@ -831,6 +831,11 @@ p {
 	background: #00aff1;
 	border: 2px solid #00aff1;
 }
+.uk-icon-envelope.social_list_item_link:hover {
+	color: #fff;
+	background: #F37335;
+	border: 2px solid #F37335;
+}
 
 /******* Contact *******/
 

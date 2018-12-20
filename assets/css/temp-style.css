@@ -2,6 +2,8 @@ body, html {
   height: 100%;
 }
 
+/* Top section */
+
 .top-container {
   position: relative;
   height: 70%;
@@ -25,7 +27,8 @@ body, html {
   z-index: 100;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 
   height: 100%;
@@ -34,10 +37,14 @@ body, html {
 
 #logo {
   z-index: 100;
-  position: absolute;
 
   width: 100%;
-  margin: auto;
+}
+
+.top-copy {
+  font-size: 25px;
+  line-height: 1.5;
+  color: #ffffff;
 }
 
 .top-padding {
@@ -105,7 +112,7 @@ body, html {
 /* Form */
 
 .floating-label-form-group {
-    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
     margin-bottom: 0;
     position: relative;
     padding-bottom: 0.5em;
@@ -116,7 +123,7 @@ body, html {
     background: none;
     border: none;
     border-radius: 0;
-    padding-left: 0;
+    padding-left: 14px;
     padding-right: 0;
     box-shadow: none !important;
     position: relative;
@@ -133,8 +140,8 @@ body, html {
     border-radius: 0;
     font-size: 1.5em;
     box-shadow: none;
-    margin-left: -4px;
     background: transparent;
+    padding-left: 14px;
 }
 
 .floating-label-form-group label {
@@ -155,8 +162,7 @@ body, html {
 }
 
 .floating-label-form-group:not(:first-child) {
-    border-left: 1px solid #ccc;
-    padding-left: 14px;
+    border: 1px solid #ccc;
 }
 
 .floating-label-form-group-with-value label {
@@ -169,16 +175,26 @@ body, html {
 }
 
 form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
-/* Background colors */
+@media screen and (max-width: 512px) {
 
-.gradient {
-  background: #DD5E89;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F7BB97, #DD5E89);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F7BB97, #DD5E89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  .floating-label-form-group {
+    padding-bottom: .3em;
+  }
 
+  .floating-label-form-group input,
+  .floating-label-form-group select,
+  .floating-label-form-group input[type=number] {
+    font-size: .9em;
+    padding-left: 7px;
+  }
+
+  .floating-label-form-group label {
+    font-size: .8em;
+    line-height: 1.664705882em;
+  }
 }
 
 /* Type */
@@ -197,7 +213,7 @@ body, input, select, textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Orbitron", Arial, Helvetica, sans-serif;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
 	@media screen and (max-width: 1680px) {
@@ -1339,6 +1355,8 @@ header p {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding-top: 3.5%;
 
   background-color: #f7f7f7;
 }
