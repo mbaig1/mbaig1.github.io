@@ -24,11 +24,11 @@ body, html {
 
 .logo-container {
   position: absolute;
-  z-index: 100;
+  z-index: 15;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   height: 100%;
@@ -36,19 +36,29 @@ body, html {
 }
 
 #logo {
-  z-index: 100;
-
   width: 100%;
+  margin-bottom: 7%;
+  margin-top: -10%;
 }
 
 .top-copy {
   font-size: 25px;
+  font-family: "Ubuntu", sans-serif;
   line-height: 1.5;
   color: #ffffff;
+  text-align: center;
 }
 
 .top-padding {
   padding-top: 5%;
+}
+
+@media screen and (max-width: 560px) {
+
+  .top-copy {
+    font-size: 12px;
+    line-height: 1.2;
+  }
 }
 
 /* Waves */
@@ -1298,7 +1308,7 @@ header p {
 		}
 
 	.feature {
-		border-color: #e3e3e3;
+		border: none;
 	}
 
 		.feature .facolor1 {
@@ -1367,6 +1377,23 @@ header p {
 
 .social_list_item_link {
   background-color: #f7f7f7;
+}
+
+@media screen and (max-width: 560px) {
+
+  .social-media-container {
+    padding-top: 7.5%;
+  }
+
+  .social_list_item {
+    height: 50px;
+    width: 50px;
+  }
+
+  .social_list_item_link {
+    font-size: 20px;
+    line-height: 75px;
+  }
 }
 
 /* Footer */
