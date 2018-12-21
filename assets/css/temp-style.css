@@ -45,8 +45,11 @@ body, html {
   font-size: 25px;
   font-family: "Ubuntu", sans-serif;
   line-height: 1.5;
+
   color: #ffffff;
+
   text-align: center;
+  text-shadow: 0px 1px #F37335;
 }
 
 .top-padding {
@@ -116,7 +119,34 @@ body, html {
 /* First break */
 
 .first-break {
-  height: 15%;
+  padding-left: 2%;
+  padding-right: 2%;
+
+  max-width: 4096px;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+.break-header {
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 400;
+  
+  color: #FDC830;
+}
+
+.break-copy {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 18px;
+
+  line-height: 1.4;
+  text-align: justify;
+
+}
+
+.break-copy strong {
+  font-weight: 400;
 }
 
 /* Form */

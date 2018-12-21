@@ -85,38 +85,6 @@ p {
 	transform: none;
 }
 
-/******* Effects *******/
-
-.rainy_effect .container {
-	background: url('https://res.cloudinary.com/dzixj0ktk/image/upload/v1539709859/photo_1_qwxu9e.jpg') no-repeat 0 0;
-	background-size: cover;
-	background-attachment: fixed;
-}
-#rainy_background {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-
-.particles_effect .container_block,
-.winter_effect .container_block {
-	z-index: auto;
-}
-.particles_effect .container_title,
-.particles_effect .container_subtitle,
-.particles_effect .container_description,
-.winter_effect .container_title,
-.winter_effect .container_subtitle,
-.winter_effect .container_description {
-	z-index: 4;
-}
-.particles_effect .container_button,
-.particles_effect .form_send_message,
-.winter_effect .container_button,
-.winter_effect .form_send_message {
-	z-index: 5;
-}
-
 /******* Header *******/
 
 .header {
