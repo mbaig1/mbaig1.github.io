@@ -18,6 +18,24 @@
 	  gtag('config', 'UA-131019415-1');
 	</script>
 
+	<!-- Twitter  -->
+	<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
 	<link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16" />
 
@@ -384,7 +402,7 @@
 
 	<!-- Twitter timeline -->
 	<div class="twitter-container">
-		<a class="twitter-timeline" href="https://twitter.com/datafluencer?ref_src=twsrc%5Etfw">Tweets by datafluencer</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<a class="twitter-timeline" href="https://twitter.com/datafluencer?ref_src=twsrc%5Etfw">Tweets by datafluencer</a>
 	</div>
 
 	<section class="social-media-container">
