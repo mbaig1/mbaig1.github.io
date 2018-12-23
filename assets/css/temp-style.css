@@ -13,12 +13,6 @@ body, html {
   justify-content: center;
   align-items: center;
 
-  /* border-bottom: rgba(221,221,221,0.7) solid 1px;
-
-  -webkit-box-shadow: 0px 0px 250px 2px rgba(221,221,221,0.7);
-  -moz-box-shadow: 0px 0px 250px 2px rgba(221,221,221,0.7);
-  box-shadow: 0px 0px 250px 2px rgba(221,221,221,0.7); */
-
   background-color: #ffffff;
 }
 
@@ -49,7 +43,6 @@ body, html {
   color: #ffffff;
 
   text-align: center;
-  text-shadow: 0px 1px #F37335;
 }
 
 .top-padding {
@@ -166,7 +159,6 @@ body, html {
 
   color: #FDC830;
 
-  text-shadow: 1px 0 #ccc;
 }
 
 .second-break-header {
