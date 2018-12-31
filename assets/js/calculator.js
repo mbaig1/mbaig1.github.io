@@ -6,7 +6,7 @@ var categories = [...document.getElementsByClassName('category')];
 // Global Variables
 var numOfPosts = {};
 var numOfEngagements = {};
-var numOfCategoriesUsed;
+var numOfCategoriesUsed = 0;
 
 const AVGCOSTPERENGAGEMENT = {
   "Fitness": 0.18,
@@ -19,7 +19,7 @@ const AVGCOSTPERENGAGEMENT = {
 };
 
 function prepAcquiredData() { // for Global Variables (from user)
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 12; i++) {
     numOfLikes[i] = parseInt(numOfLikes[i].value);
     numOfComments[i] = parseInt(numOfComments[i].value);
     categories[i] = categories[i].value;
@@ -45,8 +45,7 @@ function setupKnowledge() { //for Global Variables
 }
 
 function methodOne() {
-  var partA, partB, numOfPartB, result;
-  var partC = 0;
+  var partA = 0, partB = 0, partC = 0, result = 0;
   for (var category in numOfPosts) {
     partA = AVGCOSTPERENGAGEMENT[category] * numOfEngagements[category];
     partB = partA / numOfPosts[category];
@@ -59,9 +58,9 @@ function methodOne() {
 }
 
 function methodTwo() {
-  var partA, partB, partC, partD, result;
+  var partA = 0, partB = 0, partC = 0, partD = 0, result = 0;
   for (var category in numOfPosts) {
-    partA = numOfPosts[category] / 20;
+    partA = numOfPosts[category] / 12;
     partB = partA * AVGCOSTPERENGAGEMENT[category];
     partC = partB * numOfEngagements[category];
     partD = partC / numOfPosts[category];
@@ -72,15 +71,17 @@ function methodTwo() {
 }
 
 function methodThree() {
-  var partA, partB, partC, partD, result;
+  var partA = 0, partB = 0, partC = 0, partD = 0, result = 0;
   for (var category in numOfPosts) {
-    partA = numOfPosts[category] / 20;
+    partA = numOfPosts[category] / 12;
     partB = partA * AVGCOSTPERENGAGEMENT[category];
     partC = partB * numOfEngagements[category];
     partD += partA;
   }
 
   result = partD * AVGCOSTPERENGAGEMENT[category];
+
+  return result;
 }
 
 function calculate(e) {
@@ -90,6 +91,8 @@ function calculate(e) {
 
   var postRates = [methodOne(), methodTwo(), methodThree()];
   var averagePostRate = (postRates[0] + postRates[1] + postRates[2])/3;
+
+  console.table(postRates);
 }
 
 document.getElementById('calculate').addEventListener("click", calculate);
