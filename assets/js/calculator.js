@@ -18,6 +18,10 @@ const AVGCOSTPERENGAGEMENT = {
   "Beauty": 0.14
 };
 
+var methodOnePrices = {}; // holds by-category prices for each category
+var methodTwoPrices = {}; // holds by-category-engagement prices for each category
+var methodThreePrices = {}; // holds by-avg-engagement prices for each category
+
 function prepAcquiredData() { // for Global Variables (from user)
   for (var i = 0; i < 12; i++) {
     numOfLikes[i] = parseInt(numOfLikes[i].value);
@@ -50,6 +54,8 @@ function methodOne() {
     partA = AVGCOSTPERENGAGEMENT[category] * numOfEngagements[category];
     partB = partA / numOfPosts[category];
     partC += partB;
+
+    methodOnePrices[category] = partB;
   }
 
   result = partC / numOfCategoriesUsed;
@@ -65,6 +71,8 @@ function methodTwo() {
     partC = partB * numOfEngagements[category];
     partD = partC / numOfPosts[category];
     result += partD;
+
+    methodTwoPrices[category] = partD;
   }
 
   return result;
@@ -76,7 +84,9 @@ function methodThree() {
     partA = numOfPosts[category] / 12;
     partB = partA * AVGCOSTPERENGAGEMENT[category];
     partC = partB * numOfEngagements[category];
-    partD += partA;
+    partD += partC;
+
+    methodThreePrices[category] = partC;
   }
 
   result = partD * AVGCOSTPERENGAGEMENT[category];
