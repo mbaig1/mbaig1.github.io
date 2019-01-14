@@ -2,6 +2,42 @@ body, html {
   height: 100%;
 }
 
+/* Error styling */
+
+.error-shadow {
+  -webkit-box-shadow: 2px 2px 20px #FC0707;
+     -moz-box-shadow: 2px 2px 20px #FC0707;
+          box-shadow: 2px 2px 20px #FC0707;
+}
+
+.buttonShake {
+  animation-name: shakeAnim;
+  animation-duration: 6s;
+}
+
+@keyframes shakeAnim {
+  0% {left: 0}
+  1% {left: -3px}
+  2% {left: 5px}
+  3% {left: -8px}
+  4% {left: 8px}
+  5% {left: -5px}
+  6% {left: 3px}
+  7% {left: 0}
+}
+
+/* Modal */
+
+body.modal-open{
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+
+.modal-backdrop { background: #f7f7f7; }
+
 /* Top section */
 
 .top-container {
@@ -293,11 +329,22 @@ form .row:first-child .floating-label-form-group {
   font-size: 40px;
   font-family: "Open Sans";
 
-  border-color: #FDC830;
+  border: solid 2px #FDC830;
 
   color: #ffffff;
   background-color: #FCC864;
 }
+
+.calculate-button:active {
+  background: #FDC830;
+  -webkit-box-shadow: inset 0px 0px 25px #dca402;
+     -moz-box-shadow: inset 0px 0px 25px #dca402;
+          box-shadow: inset 0px 0px 25px #dca402;
+   outline: none;
+
+   font-size: 39px;
+}
+
 
 @media screen and (max-width: 512px) {
 

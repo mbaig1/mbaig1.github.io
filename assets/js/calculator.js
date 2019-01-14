@@ -1,7 +1,5 @@
 // Global Variables (from user)
-var instagramHandle = document.getElementById('insta-handle').value;
-var emailAddress = document.getElementById('email').value;
-var city = document.getElementById('city').value;
+var instagramHandle, emailAddress, city;
 
 var numOfLikes = [...document.getElementsByClassName('likes')];
 var numOfComments = [...document.getElementsByClassName('comments')];
@@ -126,7 +124,37 @@ function fillReportParams(postRatesArr, photosArr) {
 }
 
 function sendRequest() {
-  $.ajax();
+  $.ajax({
+    type: "POST",
+    url: 'https://emailpdfsender.herokuapp.com/',
+    data: JSON.stringify(reportParams),
+    dataType: 'json',
+    success: function (res) {
+      console.log("success");
+    },
+    error: function (err) {
+      console.log("error");
+    }
+  });
+}
+
+function checkForm() {
+  var $inputs = $('.form-control');
+  var $formBoxes = $('.form-group');
+  var flag = false;
+
+  for (var i = 0; i < $inputs.length; i++) {
+    currentInput = $inputs[i];
+    currentBox = $formBoxes[i];
+
+    console.log('i:' + i);
+
+    if(currentInput.value == undefined || currentInput.value == "Industry" || currentInput.value == "") {
+      flag = true;
+    }
+  }
+  console.log(flag);
+  return flag;
 }
 
 function calculate(e) {
@@ -134,8 +162,14 @@ function calculate(e) {
   prepAcquiredData();
   setupKnowledge();
 
+  $('.calculate-button').removeClass('buttonShake');
+
   var postRates = [methodOne(), methodTwo(), methodThree()];
   var photos = [];
+
+  instagramHandle = document.getElementById('insta-handle').value;
+  emailAddress = document.getElementById('email').value;
+  city = document.getElementById('city').value;
 
   for (var i = 0; i < 12; i++) {
     photos.push({
@@ -146,6 +180,12 @@ function calculate(e) {
   }
 
   fillReportParams(postRates,photos);
+  if(!checkForm()) {
+    sendRequest();
+    // TODO: Loading animation on button or modal
+  } else {
+    $('.calculate-button').addClass('buttonShake');
+  }
 }
 
 document.getElementById('calculate').addEventListener("click", calculate);
