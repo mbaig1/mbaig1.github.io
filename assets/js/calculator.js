@@ -126,7 +126,7 @@ function fillReportParams(postRatesArr, photosArr) {
 function sendRequest() {
   $.ajax({
     type: "POST",
-    url: 'https://emailpdfsender.herokuapp.com/',
+    url: 'http://localhost:3000/',
     data: JSON.stringify(reportParams),
     dataType: 'json',
     success: function (res) {
@@ -182,7 +182,8 @@ function calculate(e) {
   fillReportParams(postRates,photos);
   if(!checkForm()) {
     sendRequest();
-    // TODO: Loading animation on button or modal
+    $('.calculate-button').html('<i class="fas fa-circle-notch fa-spin"></i> SENDING');
+
   } else {
     $('.calculate-button').addClass('buttonShake');
   }
