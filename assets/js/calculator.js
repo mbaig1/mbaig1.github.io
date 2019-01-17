@@ -126,11 +126,11 @@ function fillReportParams(postRatesArr, photosArr) {
 function sendRequest() {
   $.ajax({
     type: "POST",
-    url: 'http://localhost:3000/',
+    url: 'https://emailpdfsender.herokuapp.com/',
     data: JSON.stringify(reportParams),
     dataType: 'json',
     success: function (res) {
-      console.log("success");
+      $('.calculate-button').html('<i class="fas fa-check"></i> COMPLETE');
     },
     error: function (err) {
       console.log("error");
@@ -181,9 +181,8 @@ function calculate(e) {
 
   fillReportParams(postRates,photos);
   if(!checkForm()) {
-    sendRequest();
     $('.calculate-button').html('<i class="fas fa-circle-notch fa-spin"></i> SENDING');
-
+    sendRequest();
   } else {
     $('.calculate-button').addClass('buttonShake');
   }
